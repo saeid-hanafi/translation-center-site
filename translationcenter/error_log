@@ -1,0 +1,4 @@
+[27-Oct-2019 10:54:15 Asia/Tehran] PHP Fatal error:  Call to undefined function language_attributes() in /home/sahakia1/public_html/wp-content/themes/Mr.Sahakian/useful-addresses.php on line 3
+[27-Oct-2019 10:54:30 Asia/Tehran] PHP Fatal error:  Call to undefined function language_attributes() in /home/sahakia1/public_html/wp-content/themes/Mr.Sahakian/questions.php on line 3
+[27-Oct-2019 10:55:44 Asia/Tehran] PHP Fatal error:  Call to undefined function language_attributes() in /home/sahakia1/public_html/wp-content/themes/Mr.Sahakian/questions.php on line 3
+[27-Oct-2019 11:30:44 Asia/Tehran] PHP Fatal error:  Call to undefined function language_attributes() in /home/sahakia1/public_html/wp-content/themes/Mr.Sahakian/useful-addresses.php on line 3

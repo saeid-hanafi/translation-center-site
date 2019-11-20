@@ -1,0 +1,1661 @@
+/*
+Theme Name: دارالترجه رسمی و غیر رسمی
+Author: Saeid Hanafi
+Author URI: saeed.hanafi.ciw@gmail.com
+Description:یک سایت کامل برای دار الترجمه رسمی و غیر رسمی بدون استفاده از بوت استرپ با فرم ثبت سفارش آنلاین
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   html,body{
+     height: 100%;
+   }
+   body{
+     direction: rtl;
+     font-family:IRANSans;
+   }
+   .clearfix{
+    clear: both;
+  }
+
+  /* Start top logo */ 
+  .nav{
+    width: 100%;
+    height: 90px;
+  }
+  .top-logo{
+    width: 100%;
+    height: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+  }
+  .logo,.call{
+    width: 50%;
+    height: 44px;
+    background-color: #41a9a9;
+    color: white;
+  }
+  .logo{
+    border-radius: 0px 20px 20px 0px;
+  }
+  .logo h1{
+    margin-right: 2%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  a#logo{
+    text-decoration: none;
+    color: white;
+    font-family: iransansbold;
+    font-size: 76%;
+    background-color: #41a9a9;
+    text-shadow: 0 1px 0px black, 1px 0 0px black, 1px 2px 1px black, 2px 1px 1px black, 2px 3px 2px black, 3px 2px 2px black, 3px 4px 2px black, 4px 3px 3px black, 4px 5px 3px black, 5px 4px 2px black, 5px 6px 2px black, 6px 5px 2px black, 6px 7px 1px black, 7px 6px 1px black, 7px 8px 0px black, 8px 7px 0px black;
+    
+  }
+  .call{
+    font-family: iransansbold;
+    direction: ltr;
+    border-radius: 20px 0px 0px 20px;
+  }
+  .call h2{
+    margin-left: 2%;
+    font-size: 41%;
+    margin-top: 9px;
+  }
+  .phonenumber{
+    color: black;
+  }
+ 
+  /* End top logo */
+
+  /* Start top menu */
+  .small-menu{
+    display: none;
+  }
+  .top-menu{
+    width: 100%;
+    height: 44px;
+    background-color: black;
+    line-height: 44px;
+    border-radius: 20px;
+    position: relative;
+    top: 18%;
+  }
+  ul.top-menu1{
+    padding: 0;
+    list-style: none;
+  }
+  .top-menu ul li{
+    display: inline-block;
+  }
+  .top-menu ul li a{
+    width: 90px;
+    height: 44px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: iransansbold;
+  }
+  .top-menu ul li a:hover{
+    color: #085461;
+  }
+  .myservices:hover + .myservices1{
+    display: block;
+  }
+  ul.myservices1{
+    display:none;
+    width: 265px;
+    height: 265px;
+    padding: 0;
+    list-style: none;
+    background-color: #085461;
+    font-size: 13px;
+    font-family: iransansbold;
+    color: white;
+    line-height: 33px;
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+  }
+  ul.myservices1 li{
+    margin-right: 3%;
+  }
+  a.lang{
+    height: 30px!important;
+    background-color: white;
+    position: absolute;
+    right: 70%;
+    line-height: 34px;
+    top: 13%;
+    border-radius: 20px;
+    color: #085461!important;
+  }
+  a.lang:hover{
+    color: red!important;
+  }
+  input[type="search"]{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 80%;
+    top: 0;
+    border-radius: 20px;
+    border: 1px solid black
+  }
+  .search-icon{
+    width: 40px!important;
+    position: absolute;
+    top: 3px;
+    color: black!important;
+  }
+  ::-webkit-input-placeholder{
+    font-size: 15px;
+    border-right: 5px solid white;
+  }
+  ::-moz-placeholder{
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  /* End top menu */
+
+  /* Start top menu for small width */
+  .small-menu{
+    width: 100%;
+    height: 44px;
+    background-color: black;
+    line-height: 44px;
+    border-radius: 20px;
+    position: relative;
+    z-index:2;
+  }
+  
+
+  /* Slide show */
+  ul.gallery-slideshow {
+    width: 100%!important;
+    height: 535px!important;
+    position: relative;
+  }
+  ul.gallery-slideshow li img{
+    width: 100%;
+    height: 100%;
+  }
+  .gallery-control.trigger{
+    display: none!important;
+  }
+  .gallery-control{
+    display: none!important;
+  }
+  ul.gallery-slideshow ul.gallery-navbar{
+    display: none!important;
+  }
+
+.slidebox{
+ width: 70%;
+ height: 350px;
+ background-color: black;
+ opacity: 0.5;
+ position: absolute;
+ top: 22%;
+ left: 15%;
+ border-radius: 20px;
+ border: 5px solid black;
+ text-align: center;
+}
+p.welcome{
+  font-size: 30px;
+  font-family: iransansbold;
+  color: white;
+  position: relative;
+  top: 10px; 
+}
+p.welcome1{
+  font-size: 25px;
+  font-family: iransansbold;
+  color: white;
+  position: relative;
+  top: 10px;
+}
+.slidebox a{
+  width: 30%;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 40px;
+  display: inline-block;
+  font-size: 21px;
+  font-family: iransansbold;
+  background-color: white;
+  color: red;
+  position: relative;
+  top: 65px;
+  text-decoration: none;
+}
+.slidebox a:hover{
+  color: blue;
+}
+
+/* Circle divisions */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.row{
+  display: flexbox;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: right;
+  padding: 15px;
+}  
+.circle{
+  padding-bottom: 24.5%;
+  border-radius: 50%;
+  background-color: #085461;
+  margin: 4%;
+  border: 1px solid black;
+  position: relative;
+  text-align: center;
+}
+.opacitybox{
+  visibility: hidden;
+  width: 100%;
+  padding-bottom: 104%;
+  background-color: #00ff72;
+  border-radius: 50%;
+  position: absolute;
+  left: 6%;
+  margin: -6%;
+  opacity: 0;
+  top: -95%;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+  overflow: hidden;
+
+}
+.circle:hover .opacitybox{
+  visibility: visible;
+  opacity: 0.5;
+  top: 5%;
+}
+.circle:hover .armenian-logo{
+  display: none;
+}
+.circle:hover .question-icon{
+  display: none;
+}
+.circle:hover .address-icon{
+  display: none;
+}
+.armenian,.question,.address{
+  width: 93%;
+  font-size: 39px;
+  color: white;
+  position: absolute;
+  top: 18%;
+  font-family: iransansbold;
+}
+img.armenian-logo{
+  width: 50%;
+  border-radius: 50px;
+  position: absolute;
+  top: 55%;
+  right: 23%;
+}
+.question-icon,.address-icon{
+  width: 50%;
+  position: absolute;
+  right: 24%;
+  top: 46%;
+  font-size: 145px;
+  color: white;
+}
+.circle a{
+  width: 57%;
+  height: 70px;
+  line-height: 70px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: iransansbold;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 40px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 57%;
+  right: 21%;
+}
+.circle a:hover{
+  background-color: black;
+  color: white;
+}
+
+/* companies we've worked with division */
+
+.company{
+  width: 100%;
+  height: 300px;
+  border: 2px solid;
+  border-radius: 40px;
+}
+.company-photo{
+  width: 50%;
+  height: 300px;
+  float: left;
+}
+.company-photo1{
+  width: 100%;
+  height: 99%;
+  border-right: 2px solid;
+  border-radius: 34px 0px 0px 34px;
+}
+.company-text{
+  width: 49%;
+  height: 300px;  
+  display: inline-block;
+}
+.company-text p{
+  font-family: iransansbold;
+    font-size: 20px;
+    margin: 27px;
+}
+.company-text ol{
+  list-style-type: disc;
+  line-height: 40px;
+  font-size: 21px;
+}
+
+
+/* FOOOOOOOOOOOOOOOOOTER */
+
+.footer{
+  width: 100%;
+  height: 350px;
+  background-color: #41a9a9;
+  line-height: 50px;
+}
+.footer-text{
+  width: 49%;
+  height: 350px;
+  display: inline-block;
+  color: white;
+}
+.footer-text p{
+  font-size: 30px;
+  margin: 0;
+  font-family: iransansbold;
+  margin-right: 25px;
+  margin-top: 15px;
+  color: yellow;
+}
+.footer-loc{
+  font-size: 21px;
+  margin-right: 25px;
+  margin-left: 5px;
+}
+.footer-text h1{
+  display: inline;
+  font-size: 120%;
+}
+.footer-icon,.footer-icon1{
+  margin-right: 25px;
+  font-size: 120%;
+}
+.phone-icon-color{
+  color: #1cff1c;
+}
+.fax-icon-color{
+  margin-right: 5px;
+  margin-left: 5px;
+  color: black;
+}
+.footer-text h3{
+  display: inline-block;
+  font-size: 120%;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.footer-phonenumber{
+  margin-top: 0;
+}
+.phone-icon-color {
+  color: #1cff1c;
+}
+.tele-icon-color{
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #0088CC;
+}
+.whatsapp-icon-color{
+  color: #25D366;
+}
+.viber-icon-color{
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #665CAC;
+}
+.map{
+  width: 50%;
+  height: 350px;
+  float: left;
+}
+.googlemap{
+  width: 100%;
+  height: 99%;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* Media queries for responsive design */
+
+/* Start media query only for circle divisions responsive for 600px and down */
+
+@media only screen and (min-width:0px) and (max-width:400px){
+  .circle{
+    padding-bottom: 21%;
+  }
+  .opacitybox{
+    padding-bottom: 104.5%;
+  }
+  .circle:hover .opacitybox{
+    top: 5%;
+  }
+  .circle a{
+    height: 20px;
+    line-height: 20px;
+    font-size: 6px;
+  }
+  .armenian,.question,.address{
+    width: 67%;
+    font-size: 7px;
+    padding: 5px;
+  }
+ .question-icon,.address-icon{
+  top: 50%;
+  font-size: 32px;
+ }
+}
+
+@media only screen and (min-width:401px) and (max-width:500px){
+
+  .circle{
+    padding-bottom: 22%;
+  }
+  .opacitybox{
+    padding-bottom: 104.5%;
+  }
+  .circle:hover .opacitybox{
+    top: 5%;
+  }
+  .circle a{
+    height: 22px;
+    line-height: 22px;
+    font-size: 7px;
+  }
+  .armenian,.question,.address{
+    width: 74%;
+    font-size: 9px;
+    padding: 5px;
+  }
+ .question-icon,.address-icon{
+  top: 50%;
+  font-size: 42px;
+ }
+}
+
+@media only screen and (min-width:501px) and (max-width:600px){
+/* Circle divisions responsive */
+.circle{
+  padding-bottom: 23%;
+}
+.opacitybox{
+  padding-bottom: 105.5%;
+}
+.circle:hover .opacitybox{
+  top: 5%;
+}
+.circle a{
+  height: 25px;
+  line-height: 25px;
+  font-size: 9px;
+}
+.armenian,.question,.address{
+  width: 79%;
+  font-size: 14px;
+  padding: 5px;
+}
+.question-icon,.address-icon{
+  top: 52%;
+  font-size: 50px;
+}  
+}
+
+/* End media query only for circle divisions responsive for 600px and down */
+
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width:0px) and (max-width:600px){
+
+  /* Top logo responsive */
+  .logo h1{
+    margin-right: 6%;
+    margin-top: -7px;
+  }
+  a#logo{
+    font-size: 44%;
+  }
+ .call h2{
+   margin-bottom: 0;
+   margin-top: 8px;
+   font-size: 46%;
+ }
+
+ /* top menu responsive */
+ .nav{
+  height: 45px;
+ }
+ .small-menu{
+   display: block;
+ }
+ .top-menu{
+   display: none;
+ }
+ input[type="search"] {
+  width: 51%;
+  height: 77%;
+  right: 48%;
+  top: 4px;
+ }
+ .search-icon {
+  width: 10px!important;
+  left: 18px;
+ }
+ a.lang{
+  width: 17%;
+  text-decoration: none;
+  font-size: 10px!important;
+  text-align: center;
+  font-weight: bold;
+  right: 30%;
+  top: 13%;
+ }
+ .btn{
+  margin-right: 3%;
+ }
+ .button-icon{
+  font-size: 16px;
+ }
+ .dropdown{
+  display: none;
+  width: 100%;
+  background-color: #085461;
+  border-radius: 20px;
+  text-align: center;
+  font-family: iransansbold;
+ }
+ .dropdown ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ }
+ .dropdown ul li{
+  border: 1px solid white;
+ }
+ .dropdown ul li a{
+   width: 100%;
+   height: 44px;
+   display: inline-block;
+   color: white;
+   text-decoration: none;
+ }
+ .dropdown ul li a:hover{
+   background-color: white;
+   color: black;
+ }
+ ul.myservices1 {
+  width: 100%;
+  height: 280px;
+  display: block;
+  top: 135px;
+ }
+  ul.myservices1 li{
+    margin: 0;
+  }
+  div.dropdown1{
+    display: none;
+    width: 100%;
+    height: 280px;
+  }
+
+  /* Slide show responsive */
+  ul.gallery-slideshow{
+    height: 200px!important;
+  }
+  .slidebox{
+    height: 130px;
+    top: 20%;
+    left: 14%;
+  }
+  p.welcome{
+    font-size: 10px;
+    top: 2px;
+  }
+  p.welcome1{
+    font-size: 6px;
+    top: 2px;
+  }
+  .slidebox a{
+    width: 102px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 8px;
+    top: 10px;
+    margin-top: 5px;
+  }
+
+    /* Start divisions responsive classes */
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+    /* End divisions responsive classes */ 
+
+  /* companies we've worked with division */
+
+  .company{
+    height: 291px;
+  }
+  .company-text{
+    width: 100%;
+    height: 120px;
+    display: block;
+  }
+  .company-text p{
+    font-size: 65%;
+    margin: 20px;
+  }
+  .company-text ol{
+    line-height: 21px;
+    font-size: 65%;
+    padding-right: 35px;
+    margin-top: -10px;
+  }
+  .company-photo{
+    width: 100%;
+    margin-top: -11px;
+    height: 160px;
+  }
+  .company-photo1{
+    border-right: 0;
+    border-radius: 0px 0px 38px 38px;
+  }
+
+  /* FOOOOOOOOOOOOOOOOOTER */
+  .footer{
+    height: 293px;
+    line-height: 25px;
+    border-bottom: 2px solid #41a9a9;
+  }
+.footer-text {
+    width: 100%;
+    height: 150px;
+  }
+  .footer-text p {
+    font-size: 80%;
+    margin: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .footer-loc {
+    font-size: 80%;
+    margin-right: 20px;
+  }
+  .footer-text h1 {
+    font-size: 60%;
+  }
+  .footer-icon,.footer-icon1 {
+    margin-right: 20px;
+    font-size: 80%;
+  }
+  .footer-text h3{
+    font-size: 80%;
+  }
+  .map {
+    width: 100%;
+    height: 140px;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width:601px) and (max-width:768px){
+
+  /* Top logo responsive */
+  .logo h1{
+    margin-right: 4%;
+    margin-top: -6px;
+  }
+  a#logo{
+    font-size: 55%;
+  }
+.call h2{
+  font-size: 57%;
+  margin-top: 7px;
+}
+
+ /* top menu responsive */
+ .nav{
+  height: 45px;
+ }
+ .small-menu{
+   display: block;
+ }
+ .top-menu{
+   display: none;
+ }
+ input[type="search"] {
+  width: 43%;
+  height: 77%;
+  right: 56%;
+  top: 4px;
+ }
+ .search-icon {
+  width: 10px!important;
+  left: 22px;
+ }
+ a.lang{
+  width: 13%;
+  text-decoration: none;
+  font-size: 10px!important;
+  text-align: center;
+  font-weight: bold;
+  right: 41%;
+  top: 13%;
+ }
+ .btn{
+  margin-right: 3%;
+ }
+ .button-icon{
+  font-size: 16px;
+ }
+ .dropdown{
+  display: none;
+  width: 100%;
+  background-color: #085461;
+  border-radius: 20px;
+  text-align: center;
+  font-family: iransansbold;
+ }
+ .dropdown ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ }
+ .dropdown ul li{
+  border: 1px solid white;
+ }
+ .dropdown ul li a{
+   width: 100%;
+   height: 44px;
+   display: inline-block;
+   color: white;
+   text-decoration: none;
+ }
+ .dropdown ul li a:hover{
+   background-color: white;
+   color: black;
+ }
+ ul.myservices1 {
+  width: 100%;
+  height: 280px;
+  display: block;
+  top: 135px;
+ }
+  ul.myservices1 li{
+    margin: 0;
+  }
+  div.dropdown1{
+    display: none;
+    width: 100%;
+    height: 280px;
+  }
+ 
+  /* Slide show responsive */
+  ul.gallery-slideshow{
+    height: 325px!important;
+  }
+  .slidebox{
+    height: 170px;
+    top: 23%;
+    left: 15%;
+  }
+  p.welcome{
+    font-size: 20px;
+    top: -5px;
+  }
+  p.welcome1{
+    font-size: 11px;
+    top: -10px;
+  }
+  .slidebox a{
+    width: 133px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 11px;
+    top: 15px;
+  }
+
+   /* Start divisions responsive classes */
+   .col-s-1 {width: 8.33%;}
+   .col-s-2 {width: 16.66%;}
+   .col-s-3 {width: 25%;}
+   .col-s-4 {width: 33.33%;}
+   .col-s-5 {width: 41.66%;}
+   .col-s-6 {width: 50%;}
+   .col-s-7 {width: 58.33%;}
+   .col-s-8 {width: 66.66%;}
+   .col-s-9 {width: 75%;}
+   .col-s-10 {width: 83.33%;}
+   .col-s-11 {width: 91.66%;}
+   .col-s-12 {width: 100%;}
+  /* End divisions responsive classes */
+
+  /* Circle divisions responsive */
+  .circle{
+    padding-bottom: 24%;
+  }
+  .opacitybox{
+    padding-bottom: 107.5%;
+  }
+  .circle:hover .opacitybox{
+    top: 5%;
+  }
+  .circle a{
+    height: 30px;
+    line-height: 30px;
+    font-size: 11px;
+  }
+  .armenian,.question,.address{
+    width: 83%;
+    font-size: 16px; 
+  }
+
+  .question-icon,.address-icon{
+    top: 44%;
+    font-size: 74px;
+  }
+
+    /* FOOOOOOOOOOOOOOOOOTER */
+    .footer{
+      height: 293px;
+      line-height: 25px;
+      border-bottom: 2px solid #41a9a9;
+    }
+  .footer-text {
+      width: 100%;
+      height: 150px;
+    }
+    .footer-text p {
+      font-size: 80%;
+      margin: 0;
+      margin-right: 20px;
+      margin-top: 10px;
+    }
+    .footer-loc {
+      font-size: 80%;
+      margin-right: 20px;
+    }
+    .footer-text h1 {
+      font-size: 80%;
+    }
+    .footer-icon,.footer-icon1 {
+      margin-right: 20px;
+      font-size: 80%;
+    }
+    .footer-text h3{
+      font-size: 80%;
+    }
+    .map {
+      width: 100%;
+      height: 140px;
+    }
+ 
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:769px) and (max-width:992px){
+
+  /* Top logo responsive */  
+  .logo h1{
+    margin-right: 3%;
+    margin-top: -6px;
+  }
+  a#logo{
+    font-size: 60%;
+  }
+.call h2{
+  font-size: 60%;
+  margin-top: 7px;
+}
+
+ /* top menu responsive */
+ .nav{
+  height: 45px;
+ }
+ .small-menu{
+   display: block;
+ }
+ .top-menu{
+   display: none;
+ }
+ input[type="search"] {
+  width: 37%;
+  height: 77%;
+  right: 62%;
+  top: 4px;
+ }
+ .search-icon {
+  width: 10px!important;
+  left: 22px;
+ }
+ a.lang{
+  width: 12%;
+  text-decoration: none;
+  font-size: 10px!important;
+  text-align: center;
+  font-weight: bold;
+  right: 49%;
+  top: 13%;
+ }
+ .btn{
+  margin-right: 3%;
+ }
+ .button-icon{
+  font-size: 16px;
+ }
+ .dropdown{
+  display: none;
+  width: 100%;
+  background-color: #085461;
+  border-radius: 20px;
+  text-align: center;
+  font-family: iransansbold;
+ }
+ .dropdown ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ }
+ .dropdown ul li{
+  border: 1px solid white;
+ }
+ .dropdown ul li a{
+   width: 100%;
+   height: 44px;
+   display: inline-block;
+   color: white;
+   text-decoration: none;
+ }
+ .dropdown ul li a:hover{
+   background-color: white;
+   color: black;
+ }
+ ul.myservices1 {
+  width: 100%;
+  height: 280px;
+  display: block;
+  top: 135px;
+ }
+  ul.myservices1 li{
+    margin: 0;
+  }
+  div.dropdown1{
+    display: none;
+    width: 100%;
+    height: 280px;
+  }
+
+    /* Slide show responsive */
+    ul.gallery-slideshow{
+      height: 455px!important;
+    }
+    .slidebox{
+      height: 245px;
+      top: 26%;
+      left: 15%;
+    }
+    p.welcome{
+      font-size: 25px;
+      top: 2px;
+    }
+    p.welcome1{
+      font-size: 14px;
+      top: -2px;
+    }
+    .slidebox a{
+      width: 160px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 13px;
+      top: 43px;
+    }
+
+      /* Start divisions responsive classes */
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+  /* End divisions responsive classes */
+
+  /* Circle divisions responsive */
+  .circle{
+    padding-bottom: 25%;
+  }
+  .opacitybox{
+    padding-bottom: 108.5%;
+  }
+  .circle:hover .opacitybox{
+    top: 5%;
+  }
+  .circle a{
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+  }
+  .armenian,.question,.address{
+    width: 88%;
+    font-size: 22px;
+  }
+
+  .question-icon,.address-icon{
+    top: 46%;
+    font-size: 85px;
+  }
+
+    /* FOOOOOOOOOOOOOOOOOTER */
+    .footer{
+      height: 357px;
+      line-height: 25px;
+      border-bottom: 2px solid #41a9a9;
+    }
+  .footer-text {
+      width: 100%;
+      height: 150px;
+    }
+    .footer-text p {
+      font-size: 80%;
+      margin: 0;
+      margin-right: 20px;
+      margin-top: 10px;
+    }
+    .footer-loc {
+      font-size: 80%;
+      margin-right: 20px;
+    }
+    .footer-text h1 {
+      font-size: 90%;
+    }
+    .footer-icon,.footer-icon1 {
+      margin-right: 20px;
+      font-size: 80%;
+    }
+    .footer-text h3{
+      font-size: 80%;
+    }
+    .map {
+      width: 100%;
+      height: 205px;
+    }
+
+}
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width:993px) and (max-width:1200px){
+  
+ /* Top logo responsive */
+.logo h1{
+  margin-right: 3%;
+  margin-top: -5px;
+}
+a#logo{
+  font-size: 65%;
+}
+.call h2{
+  font-size: 62%;
+  margin-top: 7px;
+}
+
+/* top menu responsive */
+.search-icon{
+  width: 20px!important;
+  left: 9px;
+}
+a.lang{
+  right: 60%;
+}
+input[type="search"] {
+    width: 30%;
+    right: 70%;
+}
+
+ /* Slide show responsive */
+ ul.gallery-slideshow{
+  height: 520px!important;
+}
+.slidebox{
+  height: 298px;
+  top: 25%;
+  left: 15%;
+}
+p.welcome{
+  font-size: 29px;
+  top: 0px;
+}
+p.welcome1{
+  font-size: 16px;
+  top: -6px;
+}
+.slidebox a{
+  width: 215px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  top: 55px;
+}
+
+  /* Start divisions responsive classes */
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+  /* End divisions responsive classes */
+
+    /* Circle divisions responsive */
+    .circle{
+      padding-bottom: 25%;
+    }
+    .opacitybox{
+      padding-bottom: 107.5%;
+    }
+    .circle:hover .opacitybox{
+      top: 5%;
+    }
+    .circle a{
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
+    }
+    .armenian,.question,.address{
+      width: 88%;
+      font-size: 30px;
+    }
+  
+    .question-icon,.address-icon{
+      top: 49%;
+      font-size: 105px;
+    }
+
+    /* FOOOOOOOOOOOOOOOOOOOOOTER */
+    .footer{
+      height: 310px;
+    }
+    .footer-text{
+      height: 310px;
+    }
+    .map{
+      height: 310px;
+    }
+    .footer-text p {
+      font-size: 20px;
+    }
+    .footer-text h1 {
+      font-size: 99%;  
+    }
+    .footer-text h3 {
+      font-size: 100%;
+      margin-top: -5px;
+      margin-bottom: -5px;
+    }  
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width:1201px){
+ 
+ /* Top logo responsive */
+ .logo h1{
+  margin-right: 2%;
+  margin-top: -5px;
+}
+a#logo{
+  font-size: 70%;
+}
+ .call h2{
+  font-size: 67%;
+  margin-top: 5px;
+ }
+
+ /* top menu responsive */
+ .search-icon{
+  width: 20px!important;
+  left: 9px;
+}
+a.lang{
+  right: 62%;
+}
+input[type="search"] {
+    width: 30%;
+    right: 70%;
+}
+
+ /* Slide show responsive */
+ ul.gallery-slideshow{
+  height: 590px!important;
+}
+.slidebox{
+  height: 355px;
+  top: 23%;
+  left: 14%;
+}
+p.welcome{
+  font-size: 38px;
+  top: 0px;
+}
+p.welcome1{
+  font-size: 21px;
+  top: -10px;
+}
+.slidebox a{
+  width: 270px;
+  height: 75px;
+  line-height: 75px;
+  font-size: 21px;
+  top: 55px;
+}
+
+ /* Start divisions responsive classes */
+ .col-xl-1 {width: 8.33%;}
+ .col-xl-2 {width: 16.66%;}
+ .col-xl-3 {width: 25%;}
+ .col-xl-4 {width: 33.33%;}
+ .col-xl-5 {width: 41.66%;}
+ .col-xl-6 {width: 50%;}
+ .col-xl-7 {width: 58.33%;}
+ .col-xl-8 {width: 66.66%;}
+ .col-xl-9 {width: 75%;}
+ .col-xl-10 {width: 83.33%;}
+ .col-xl-11 {width: 91.66%;}
+ .col-xl-12 {width: 100%;}
+ /* End divisions responsive classes */
+
+/* companies we've worked with division */
+
+.company,.company-photo,.company-text{
+  height: 400px;
+}
+.company-text p{
+  font-size: 26px;
+}
+.company-text ol{
+  font-size: 30px;
+  padding-right: 50px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+.wpcf7 {
+    text-align: right;
+    direction: rtl;
+    margin: 15px;
+}
+.wpcf7-not-valid-tip{
+    display: none;
+}.last{
+    margin-right: 10px;
+}
+.formc {
+        display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.wpcf7-submit {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

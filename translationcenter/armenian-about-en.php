@@ -1,0 +1,244 @@
+<?php /* Template Name: armenian-about-en */ ?>
+<!doctype html>
+<html class="no-js" <?php language_attributes(); ?>>
+
+<head>
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <title><?php bloginfo('title'); ?></title>
+  <meta name="description" content="<?php bloginfo('description'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="<?php bloginfo('template_url'); ?>/site.webmanifest">
+  <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/icon.png">
+  <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main-en.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/all.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/fontiran.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/armenian-about-en.css">
+  
+
+</head>
+
+<body>
+  
+ <header>
+   <nav>
+     <div class="nav">
+
+<!-- Start top logo -->
+
+       <div class="top-logo">
+         <div class="logo">
+         <h1><a id="logo" href="https://sahakian-translation-center.ir/home-en/">THE SAHAKIAN TRANSLATION CENTER</a></h1>
+       </div>
+       <div class="call">
+         <h2>0037410235752 _ 0037410237272 &nbsp &nbsp <span class="phonenumber"><i class="fas fa-phone-square-alt">&nbsp &nbsp<i class="fas fa-fax"></i></i></span></h2>
+         <h2>0037494801501 &nbsp &nbsp <span class="phonenumber"><i class="fas fa-phone-square-alt">&nbsp &nbsp<i class="fab fa-telegram">&nbsp &nbsp<i class="fab fa-whatsapp">&nbsp  &nbsp<i class="fab fa-viber"></i></i></i></i></span></h2>
+       </div>
+       </div>
+
+<!-- End top logo -->
+
+<!-- Start top menu -->
+
+       <div class="top-menu">
+         <ul class="top-menu1">
+           <li><a href="https://sahakian-translation-center.ir/home-en/">Home</a></li>
+           <li><a class="myservices" href="#">Our services</a>
+              <ul class="myservices1">
+                <li>
+Official and unofficial translation of personal documents</li>
+                <li>
+Official and unofficial translation of degrees of education</li>
+                <li>
+Official and unofficial translation of marriage document</li>
+                <li>
+Official translation of companies and offices documents</li>
+                <li>
+Official and unofficial translation of articles</li>
+                <li>Catalog and CV Translation</li>
+                <br>
+                <li>
+Book translating</li>
+                <li>
+Obtain Foreign Ministry and Embassy approval</li>
+              </ul>
+          </li>
+           <li><a href="https://sahakian-translation-center.ir/cost-en/">
+Services fee</a></li>
+           <li><a href="https://sahakian-translation-center.ir/languages-en/">Languages</a></li>
+           <li><a href="https://sahakian-translation-center.ir/about-us-en/">About usا</a></li>
+           <li><a href="https://sahakian-translation-center.ir/contact-us-en/">Contact us</a></li>
+           <li><a class="lang" href="https://sahakian-translation-center.ir/armenian-about/">فارسی</a></li>
+           <li><form action="<?php echo site_url(); ?>" method="get"><input name="s" type="search" placeholder="Search..."><a href="https://sahakian-translation-center.ir/search/" class="search-icon"><i class="fas fa-search"></i></a></form></li>
+         </ul>
+       </div>
+      </div>
+		
+<!-- End top menu -->
+
+<!-- Start top menu for small width-->
+
+       <div class="small-menu">
+         <button type="button" class="btn"><span class="button-icon"><i class="fas fa-align-center"></i></span></button>
+         <div class="dropdown">
+           <ul>
+          <li><a href="https://sahakian-translation-center.ir/home-en/">Home</a></li>
+           <li><a class="myservices" href="#">Our services</a></li>
+		   <div class="dropdown1">
+              <ul class="myservices1">
+                <li>
+Official and unofficial translation of personal documents</li>
+                <li>
+Official and unofficial translation of degrees of education</li>
+                <li>
+Official and unofficial translation of marriage document</li>
+                <li>
+Official translation of companies and offices documents</li>
+                <li>
+Official and unofficial translation of articles</li>
+                <li>Catalog and CV Translation</li>
+   
+                <li>
+Book translating</li>
+                <li>
+Obtain Foreign Ministry and Embassy approval</li>
+              </ul>
+              </div>
+          <li><a href="https://sahakian-translation-center.ir/cost-en/">
+Services fee</a></li>
+           <li><a href="https://sahakian-translation-center.ir/languages-en/">Languages</a></li>
+           <li><a href="https://sahakian-translation-center.ir/about-us-en/">About usا</a></li>
+           <li><a href="https://sahakian-translation-center.ir/contact-us-en/">Contact us</a></li>
+           </ul>
+         </div>
+         <a class="lang" href="https://sahakian-translation-center.ir/armenian-about/">فارسی</a>
+           <form action="<?php echo site_url(); ?>" method="get"><input name="s" type="search" placeholder="Search..."><a href="https://sahakian-translation-center.ir/search/" class="search-icon"><i class="fas fa-search"></i></a></form>
+       </div>
+       
+<!-- End top menu for small width-->
+
+   </nav>
+ </header>
+ 
+<!-- About of Armenian divisions -->
+<div class="armenian-about">
+  <h1>
+About of Armenia</h1>
+  <p>Armenia is one of the most beautiful countries in the South Caucasus region. It lies between the Black Sea and the Caspian Sea and is Iran's route to Europe.
+    Its official name is the Republic of Armenia, but in the local language it is called Hayek. The native language of the country is Armenian and their race is a result of the integration of various ethnic groups living on the Armenian plateau and immigrants from India and Europe.
+    The capital of this country and its important commercial, political, cultural and economic center is Yerevan. Gyumri, Vanadzor and Achimadzin are important cities in the country.
+  The Armenian economy is based on construction and services and has also been successful in mining and exporting copper, iron, gold, salt, basalt and marble. But in recent years tourism development in the country has become one of the most important sources of income in Armenia. The arrival of various tourists, mainly from Russia, Iran, the European Union and Georgia, has played a significant role in improving the country's economy. Development of tourism infrastructure, diversification of tourism products and high cultural and natural potential, introduction of its attractions as a tourist destination in international media, cancellation of visas for EU member states and adoption of open sky policy have led Armenia to The economic development of tourism sector will grow significantly.</p>
+    <div class="armenian-about-flex">
+      <div class="armenian-about-box">
+    <img class="armenian-about-photo" src="<?php bloginfo('template_url') ?>/img/armenian1.jpg" alt="Republic square" title="Republic square">
+    </div>
+    </div>
+  <h3>The 
+weather</h3>
+  <p>Armenia has a relatively temperate climate. The summers are affected by the warm winds that flow from the Iranian plateau to the south, and the winters are very cold with increasing atmospheric pressure. The air temperature in this country is highly dependent on the seasons, which makes it clear for every tourist to choose the season of travel to Armenia.
+  
+Situated 400 to 4000 meters above sea level, it has wide climatic variability, with Armenia consisting of semi-desert, steppe, forest, alpine and mountainous areas.
+      Aragats, Achkasar, Ajdahak, Spitakasar, Gafasar, Vardenis, Mets Ishkhanasar are the peaks of this country, the most famous of which is Aragats Peak at a height of 4095 meters above sea level.
+      The rivers of Armenia are mostly confined to Aras: Harazdan, Azat, Vedi, Verotan, are a part of the rivers that eventually become part of Aras and other rivers that connect to the Swan Lake.</p>
+      <div class="armenian-about-flex">
+          <div class="armenian-about-box">
+        <img class="armenian-about-photo" src="<?php bloginfo('template_url') ?>/img/armenian4.jpg" alt="Thousand steps" title="Thousand steps">
+        </div>
+        </div> 
+  <h3>
+The tourism attraction
+</h3> 
+  <p>
+The great cultural, historical and natural diversity in Armenia has made this country a quiet and pleasant destination for tourists and there are many historical, cultural and natural attractions in Armenia, the most important of which are: </p>          
+  <h3>Swan Lake</h3> 
+  <div class="armenian-about-flex">
+      <div class="armenian-about-box">
+    <img class="armenian-about-photo" src="<?php bloginfo('template_url') ?>/img/sevan-lake.jpg" alt="Sevan lake" title="Sevan lake">
+    </div>
+    </div> 
+  <p>Lake Svan is the largest lake in the Caucasus region and is one of the freshwater mountain lakes located at a height of 1900 meters above sea level. Swan is geographically located in the central part of Armenia and is an important food source for its inhabitants, with 90% of its fish being fed from Lake Swan.</p>  
+  <h3>
+Jermuk tourist city</h3>  
+  <div class="armenian-about-flex">
+      <div class="armenian-about-box">
+    <img class="armenian-about-photo" src="<?php bloginfo('template_url') ?>/img/jermuk_city.jpg" alt="Jermuk city" title="Jermuk city">
+    </div>
+    </div>   
+  <p>
+Jermuk is a mountain town with many hot springs; it is famous for its hot springs and mineral waters. Waterfalls, artificial lakes, trails, forests and mineral water pools have attracted tourists.</p>
+  <h3>Tatev telecabine</h3>
+  <div class="armenian-about-flex">
+      <div class="armenian-about-box">
+    <img class="armenian-about-photo" src="<?php bloginfo('template_url') ?>/img/tatev.jpg" alt="Tatev" title="Tatev">
+    </div>
+    </div> 
+  <p>Tatev Wings is the name of the world's longest non-stop telecabine that provides access to the Tatev Monastery. Tatev is one of the most important religious centers of Armenia and one of the main tourist attractions of the country. The length of the tatev telecabine is more than 5 kilometers, and crosses a very beautiful and spectacular route.</p>    
+  <h3>
+Dilijan National Park</h3>
+  <div class="armenian-about-flex">
+      <div class="armenian-about-box">
+    <img class="armenian-about-photo" src="<?php bloginfo('template_url') ?>/img/dilijan.jpg" alt="Dilijan" title="Dilijan">
+    </div>
+    </div>   
+  <p>The lush town of Dilijan is located in the north of Armenia and is so lush that it is known as "Little Switzerland" among tourists. Attractions include the Dilijan Preserve and National Park, known for its beautiful forest landscapes, rich biodiversity, and rich cultural heritage.</p>  
+  <h3>Garni Temple</h3>
+  <div class="armenian-about-flex">
+      <div class="armenian-about-box">
+    <img class="armenian-about-photo" src="<?php bloginfo('template_url') ?>/img/garni.jpg" alt="Garni" title="Garni">
+    </div>
+    </div>    
+  <p>The temple is located in the village of Garni and dates back to before the advent of Christianity. Of course, renovations have been made to it many times. Its architectural style is adapted from the classic Hellenistic temple style.</p>  
+  <h3>
+Monastery of Goghard</h3>
+  <div class="armenian-about-flex">
+      <div class="armenian-about-box">
+    <img class="armenian-about-photo" src="<?php bloginfo('template_url') ?>/img/geghard.jpg" alt="Geghard" title="Geghard">
+    </div>
+    </div> 
+  <p>
+A medieval monastery located in Kotayk province. Situated in the middle of the mountain, it is now listed as a UNESCO World Heritage Site.</p>  
+  <h3>
+Yerevan History Museum</h3>
+  <div class="armenian-about-flex">
+      <div class="armenian-about-box">
+    <img class="armenian-about-photo" src="<?php bloginfo('template_url') ?>/img/museum.jpg" alt="Museum" title="Museum">
+    </div>
+    </div>   
+  <p>A large museum with an extensive collection of antiquities, coins, documents and numerous monuments found in different parts of Armenia. Located in the Republic Square in Yerevan, the museum is the third largest bronze collection in the world before BC.</p>  
+  <br>
+  <br>
+</div>
+
+ 
+ <!-- FOOOOOOOOOOOOOOOOOOOOOTER -->
+
+<div class="footer">
+  <div class="footer-text">
+    <p>Contact us</p>
+    <span class="footer-loc"><i class="fas fa-map-marker-alt"></i></span>
+    <h1>Address : Mamikoniants St 23/34,Yerevan,Armenia</h1>
+    <br>
+    <span class="footer-icon"><span class="phone-icon-color"><i class="fas fa-phone-square-alt"></i></span><span class="fax-icon-color"><i class="fas fa-fax"></i></span></span>
+    <h3>0037410235752 _ 0037410237272</h3>
+    <br>
+    <span class="footer-icon1"><span class="phone-icon-color"><i class="fas fa-phone-square-alt"></i></span><span class="tele-icon-color"><i class="fab fa-telegram"></i></span><span class="whatsapp-icon-color"><i class="fab fa-whatsapp"></i></span><span class="viber-icon-color"><i class="fab fa-viber"></i></span></span>
+    <h3 class="footer-phonenumber">0037494801501</h3>
+  </div>
+  <div class="map">
+       <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0051548383935!2d44.518801114611406!3d40.20894827938983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd512913e3af%3A0x15cd47ade9d72a1e!2ssahakian%20translation%20center!5e0!3m2!1sen!2s!4v1572773510018!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+</div>
+
+  <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
+
+
+</body>
+
+</html>
